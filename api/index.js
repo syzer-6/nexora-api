@@ -7,7 +7,7 @@ export default function handler(req, res) {
 
   res.status(200).json({
     server_host: process.env.SERVER_HOST,
-    server_port: process.env.SERVER_PORT,
+    server_port: parseInt(process.env.SERVER_PORT),
     URL_CLIENT: "",
     URL_GAME_FILES: "",
     URL_GAME_FILES_UPD: "",
